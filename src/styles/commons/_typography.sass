@@ -1,0 +1,157 @@
+html
+    color: $color-5
+    font-family: $font-regular
+    font-size: $font-size-base + px
+
+h1,
+h2,
+h3,
+h4,
+.btn,
+.text_menu,
+.text_team,
+.text_dropdown,
+.text_division,
+.text_dropdown_title,
+.button--primary
+    font-family: $font-title
+    text-transform: uppercase
+
+h1,
+h2,
+h3
+    font-weight: bold
+
+h1
+    color: $color-white
+    font-size: px2rem(70)
+    letter-spacing: ls2rem(7)
+    line-height: px2rem(70)
+
+    &::after
+        @supports (-webkit-text-stroke: 1px $color-3)
+            -webkit-text-fill-color: rgba($color-white, 0)
+            -webkit-text-stroke: 1px $color-3
+            color: rgba($color-white, 0)
+
+h2
+    color: $color-1
+    font-size: px2rem(40)
+    letter-spacing: ls2rem(3.5)
+    line-height: px2rem(45)
+    margin-bottom: 30px
+
+    &::after
+        @supports (-webkit-text-stroke: 1px $color-5)
+            -webkit-text-fill-color: rgba($color-white, 0)
+            -webkit-text-stroke: 1px $color-5
+            color: rgba($color-white, 0)
+
+    &:last-child
+        margin-bottom: 0
+
+h3
+    font-size: px2rem(26)
+    font-style: italic
+    letter-spacing: ls2rem(2.8)
+    line-height: px2rem(38)
+    margin-bottom: 30px
+    &:not(.full)
+        @supports (-webkit-text-stroke: 1px $color-2)
+            -webkit-text-fill-color: rgba($color-white, 0)
+            -webkit-text-stroke: 1px $color-2
+            color: rgba($color-white, 0)
+
+        &.white
+            @supports (-webkit-text-stroke: 1px $color-white)
+                -webkit-text-fill-color: rgba($color-white, 0)
+                -webkit-text-stroke: 1px $color-white
+                color: rgba($color-white, 0)
+            
+
+    &:last-child
+        margin-bottom: 0
+
+h4
+    color: $color-2
+    font-size: px2rem(14)
+    line-height: px2rem(16)
+    margin-bottom: 10px
+
+    &:last-child
+        margin-bottom: 0
+
+p,
+a,
+button
+    font-size: px2rem(14)
+    line-height: px2rem(22)
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+a,
+button
+    color: $color-2
+    font-size: px2rem(14)
+    font-weight: bold
+    text-decoration: none
+
+.text
+    &_menu
+        font-size: px2rem(14)
+        font-weight: normal
+        letter-spacing: ls2rem(1.6)
+        line-height: px2rem(17)
+
+    &_team
+        color: $color-3
+        font-size: px2rem(35)
+        font-weight: bold
+        letter-spacing: ls2rem(2.45)
+        line-height: px2rem(42)
+        @supports (-webkit-text-stroke: 1px $color-3)
+            -webkit-text-fill-color: rgba($color-white, 0)
+            -webkit-text-stroke: 1px $color-3
+            color: rgba($color-white, 0)
+
+    &_dropdown
+        color: $color-3
+        font-size: px2rem(25)
+        font-weight: bold
+        letter-spacing: ls2rem(100)
+        line-height: px2rem(35)
+        @supports (-webkit-text-stroke: 1px $color-3)
+            -webkit-text-fill-color: rgba($color-white, 0)
+            -webkit-text-stroke: 1px $color-3
+            color: rgba($color-white, 0)
+
+        &.active
+            @supports (-webkit-text-stroke: 1px $color-3)
+                -webkit-text-fill-color: $color-3
+
+        &_title
+            color: $color-white
+            font-size: px2rem(20)
+            letter-spacing: ls2rem(2.45)
+            line-height: px2rem(25)
+
+    &_product
+        &_sizes
+            font-size: px2rem(10)
+
+        &_price
+            color: $color-white
+            font-weight: bold
+
+
+
+@include media-breakpoint-up(md)
+
+    .text
+        &_dropdown
+            &:hover
+                @supports (-webkit-text-stroke: 1px $color-3)
+                    -webkit-text-fill-color: $color-3
+                    color: $color-3
+
