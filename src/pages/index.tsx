@@ -1,8 +1,12 @@
 import React from "react";
+import { EmailContainer, Header } from "Components";
 
 
 export default function Home() {
     return (
-        <h1>hello world</h1>
+        <React.Fragment>
+            <Header />
+            <EmailContainer />
+        </React.Fragment>
     );
 }

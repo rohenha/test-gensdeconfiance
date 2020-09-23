@@ -1,6 +1,7 @@
 import random
 import time
 from pathlib import Path
+# from flask_cors import CORS
 
 from flask import Flask, request, abort
 
